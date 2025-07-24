@@ -6,18 +6,23 @@ public class Assignment15 {
 		// TODO Auto-generated method stub
 		String sentence = "Java programming is fun and challenging";
 
-		int length = sentence.length();
-		System.out.println("Total no of char available in the sentence: " + length);
-
-		String lowercaseValue = sentence.toLowerCase();
-		System.out.println("Convert Lowercase" + lowercaseValue);
-		// print reverse
-		String reverseString = "";
-		for (int i = sentence.length() - 1; i >= 0; i--) {
-			reverseString += sentence.charAt(i);
+		String result="";
+		String a[]=sentence.split(" ");
+		
+		for (int i =0;i <a.length; i++) {
+			System.out.println(a[i]+ " ");
 
 		}
-		System.out.println("Reversed string:" + reverseString);
+		System.out.println("");
+		
+	for (int i =a.length-1;i>=0; i--) {
+		result=result+a[i]+" ";
+		
+		
 	}
+		System.out.println("The reverse word is :"+result);
+	}
+
+
 
 }
